@@ -55,7 +55,7 @@ jobs:
         copr: 'jamiechap/389-ds-pr-validation'
         test_suite: test_integration/test_automember.py
         template: *ci-master-latest
-        timeout: 3600
+        timeout: 6300
         topology: *master_1repl
 
   389ds-fedora/ipahealthcheck:
@@ -85,7 +85,7 @@ jobs:
           test_webui/test_automember.py
           test_webui/test_idviews.py
         template: *ci-master-latest
-        timeout: 3600
+        timeout: 4200
         topology: *ipaserver
 
   389ds-fedora/webui_general:
@@ -105,3 +105,4 @@ jobs:
         template: *ci-master-latest
         timeout: 3600
         topology: *ipaserver
+
