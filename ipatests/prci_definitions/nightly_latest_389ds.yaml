@@ -35,7 +35,7 @@ jobs:
     job:
       class: Build
       args:
-        copr: 'jamiechap/389-ds-pr-validation'
+        copr: '@389ds/389-ds-base-nightly'
         git_repo: '{git_repo}'
         git_refspec: '{git_refspec}'
         template: &ci-master-latest
@@ -52,7 +52,7 @@ jobs:
       args:
         build_url: '{389ds-fedora/build_url}'
         update_packages: True
-        copr: 'jamiechap/389-ds-pr-validation'
+        copr: '@389ds/389-ds-base-nightly'
         test_suite: test_integration/test_automember.py
         template: *ci-master-latest
         timeout: 6300
@@ -66,7 +66,7 @@ jobs:
       args:
         build_url: '{389ds-fedora/build_url}'
         update_packages: True
-        copr: 'jamiechap/389-ds-pr-validation'
+        copr: '@389ds/389-ds-base-nightly'
         test_suite: test_integration/test_ipahealthcheck.py::TestIpaHealthCheck
         template: *ci-master-latest
         timeout: 6300
@@ -80,7 +80,7 @@ jobs:
       args:
         build_url: '{389ds-fedora/build_url}'
         update_packages: True
-        copr: 'jamiechap/389-ds-pr-validation'
+        copr: '@389ds/389-ds-base-nightly'
         test_suite: >-
           test_webui/test_automember.py
           test_webui/test_idviews.py
@@ -96,7 +96,7 @@ jobs:
       args:
         build_url: '{389ds-fedora/build_url}'
         update_packages: True
-        copr: 'jamiechap/389-ds-pr-validation'
+        copr: '@389ds/389-ds-base-nightly'
         test_suite: >-
           test_webui/test_loginscreen.py
           test_webui/test_misc_cases.py
